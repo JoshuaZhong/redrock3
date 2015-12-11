@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<link rel="stylesheet" type="text/css" href="index1.css" >
+	<title>Document</title>
+	<meta charset="utf-8" >
+</head>
+<body>
+    <div>
+    	<a class="tab" href="##">聊天1</a>
+    	<a class="tab" href="##">聊天2</a>
+    	<a class="tab" href="##">聊天3</a>
+    </div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div></div>
+     <script>
+            var tabs = document.querySelectAll(
+                '.tab');
+            var block = document.querySelector(
+                '.block');
+            var colors = ['white', 'yellow', 'blue'];
+            var fs[];
+            colors.forEach(function(color,i){
+                fs.push(function(){
+                    block.style.display = 'block';
+                    block.style.background = color;
+                });
+                tabs[i].addEventListener('click',fs[i]);
+                tabs[i].removeEventListener('click',fs[i]);
+            });
+        </script>
+</body>
+</html>

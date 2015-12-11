@@ -1,0 +1,74 @@
+#border
+{
+	width: 780px;
+	height: 590px;
+	border:3px solid #00BBFF;
+	margin: 0px auto;
+	border-radius:15px 15px 0px 0px;
+}
+#first,#second,#third
+{
+	width:256px;
+	height: 30px;
+	float: left;
+	font-family: 黑体;
+	border:2px solid #FFFFFF;
+	border-radius:15px 15px 0px 0px;
+	text-align:center;
+}
+#first
+{
+	background-color:#33CCFF;
+}
+#second
+{
+	background-color:#5599ff;
+}
+#third
+{
+	background-color:#5555ff;
+}
+#fourth
+{
+	width: 780px;
+	height: 440px;
+	border-top:3px solid #00BBFF;
+	position: relative;
+	top: 33px;
+	background: url(IMG_3009.JPG);
+	font-size: 30px;
+	font-family: 楷体;
+}
+#fifth
+{
+	width: 780px;
+	height: 108px;
+	position: relative;
+	border-top:3px solid #00BBFF;
+	top:33px;
+
+}
+#sixth
+{
+	position: relative;
+	top: 12px;
+	left: 735px;
+	width: 45px;
+
+}
+#text
+{
+	width: 776px;
+	height: 106px;	
+	background: #DDDDDD;
+	font-size: 20px;
+	font-family: 楷体;
+
+}
+#button
+{
+	width: 63px;
+	height:20px;
+	position: relative;
+	right:15px;
+}

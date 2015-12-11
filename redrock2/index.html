@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Document</title>
+	<meta charset="utf-8" >
+</head>
+    <body>
+    	<div id="container">
+    		<div class="content">
+    			<div class="chatbox">
+    				<div class="leftpart">
+    					<div id="output">
+    					</div>
+    					<div class="input">
+    						<div class="text_content">
+                                <textarea rows="3" cols="8" id="textarea"></textarea>
+    						</div>
+    						<div class="text_send">
+                                <input type='button' id="text_send" value="发送">
+    						</div>
+    					</div>
+    				</div>
+    				<div class="rightpart">
+    					<div id="member">
+    						<ul id="nav">
+    							<li>
+    								<a href="##" class="member_name">钟思远1</a>
+    							</li>
+    							<li>
+    								<a href="##" class="member_name">钟思远2</a>
+    							</li>
+    							<li>
+    								<a href="##" class="member_name">钟思远3</a>
+    							</li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+        <script type="text/javascript">
+            var member_names = document.querySelectorAll(
+                '.member_name');
+            var output = document.querySelector(
+                '#output');
+            var colors = ['#FFaa88','#FF55ee', '#FFee88'];
+            colors.forEach(function(color, i){
+                member_names[i].addEventListener('click',function(){
+                    output.style.display='output';
+                    output.style.background = color;
+                });
+                member_names[i].removeEventListener('click',function(){
+                    output.style.display='output';
+                    output.style.background = color;
+                });
+             });
+            
+            text_send.addEventListener('click',function(){
+                document.querySelector('#output').innerHTML+=document.querySelector('#textarea').value;
+                });
+        </script>
+    </body>
+</html>
+
