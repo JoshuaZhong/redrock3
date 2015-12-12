@@ -1,10 +1,9 @@
 <?php
 	$pagesize=5;
 	$conne = mysql_connect("localhost","root","");//Resource id #3
+	$dbname = Users_Mysql;
 	$db_selected = mysql_select_db("users",$conn);
-	$sql="select * from users where id=3";
-	$result=mysql_fetch_array(mysql_query($sql,$conn));
-	$result['posts'];
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,7 +14,7 @@
 			function InputCheck(form1) {
 				if (form1.username.value == "") {
 					alert("Enter your nickname");
-					form1.username.focus();
+					form1.username.focus();.
 					return (false);
 				}
 				if (form1.content.value == "") {
